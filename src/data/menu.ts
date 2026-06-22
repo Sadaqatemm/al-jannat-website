@@ -53,21 +53,21 @@ export function buildDefaultMenu(): MenuItem[] {
       spiceLevel: 0,
       isVeg: true,
     },
-    {
-      id: "paneer-tikka",
-      name: { en: "Paneer Tikka", zh: "烤印度奶酪" },
-      description: {
-        en: "Marinated cottage cheese, tandoor-grilled with peppers.",
-        zh: "腌制印度奶酪，搭配彩椒土炉烤制。",
-      },
-      price: 42,
-      isPlaceholder: true,
-      category: "starters",
-      image:
-        "https://images.unsplash.com/photo-1626132647523-66c5bf60d4b2?w=400&q=80",
-      spiceLevel: 1,
-      isVeg: true,
-    },
+    // {
+    //   id: "paneer-tikka",
+    //   name: { en: "Paneer Tikka", zh: "烤印度奶酪" },
+    //   description: {
+    //     en: "Marinated cottage cheese, tandoor-grilled with peppers.",
+    //     zh: "腌制印度奶酪，搭配彩椒土炉烤制。",
+    //   },
+    //   price: 42,
+    //   isPlaceholder: true,
+    //   category: "starters",
+    //   image:
+    //     "https://images.unsplash.com/photo-1626132647523-66c5bf60d4b2?w=400&q=80",
+    //   spiceLevel: 1,
+    //   isVeg: true,
+    // },
 
     // ---------- Main Course ----------
     {

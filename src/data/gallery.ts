@@ -43,11 +43,11 @@ export function buildDefaultGallery(seedOffset = 0): GalleryImage[] {
       src: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80",
       alt: { en: "Masala chai pour", zh: "玛萨拉奶茶" },
     },
-    {
-      id: "paneer-tikka-plate",
-      src: "https://images.unsplash.com/photo-1626132647523-66c5bf60d4b2?w=600&q=80",
-      alt: { en: "Paneer tikka", zh: "烤印度奶酪" },
-    },
+    // {
+    //   id: "paneer-tikka-plate",
+    //   src: "https://images.unsplash.com/photo-1626132647523-66c5bf60d4b2?w=600&q=80",
+    //   alt: { en: "Paneer tikka", zh: "烤印度奶酪" },
+    // },
     {
       id: "gulab-jamun-plate",
       src: "https://images.unsplash.com/photo-1612203985729-70726954388c?w=600&q=80",
