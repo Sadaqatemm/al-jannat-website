@@ -130,13 +130,13 @@ export function buildXianlinStaff(): StaffMember[] {
     },
         {
       id: "xianlin-front3",
-      name: "Makan Singh",
+      name: "Rahul Singh Kaintura",
       role: { en: "Chef", zh: "厨师" },
       bio: {
         en: "The master of spice and simmer, expertly blending rich flavors to create the ultimate comfort curries.",
         zh: "调味与慢炖的主宰者，巧妙融合浓郁香料，打造让人无法抗拒的极品咖喱。",
       },
-      photo: "/xi7.jpg",
+      photo: "/xii7.jpg",
             isPlaceholder: true,
     },
  
@@ -164,7 +164,7 @@ export function buildXianlinStaff(): StaffMember[] {
     },
     {
       id: "xianlin-front1",
-      name: "Rahul Singh Kaintura",
+      name: "Makan Singh",
       role: { en: "Chef", zh: "厨师" },
       bio: {
         en: "A true tandoor master who runs the clay oven like clockwork, effortlessly staying on top of the non-stop rush.",

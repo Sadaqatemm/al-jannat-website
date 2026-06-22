@@ -49,9 +49,9 @@ export const branches: Branch[] = [
       time: "5:00 PM – 10:00 PM",
     },
     heroImage:
-      "/gulou-1.jfif",
+      "/gulou-1.jpg",
     cardImage:
-      "/gulou.jfif",
+      "/gulou.jpg",
     mapQuery: "28 North Yunnan Street Gulou Nanjing",
     staff: buildGulousStaff(),
     menu: buildDefaultMenu(),
@@ -84,9 +84,9 @@ export const branches: Branch[] = [
       time: "5:00 PM – 10:00 PM",
     },
     heroImage:
-      "/xianlin.jfif",
+      "/xianlin.jpg",
     cardImage:
-      "/xianlin-11.jfif",
+      "/xianlin-11.jpg",
     mapQuery: "Xianlin University District Qixia Nanjing",
     staff: buildXianlinStaff(),
     menu: buildDefaultMenu(),
@@ -118,9 +118,9 @@ export const branches: Branch[] = [
       time: "5:00 PM – 10:00 PM",
     },
     heroImage:
-      "/jiangning.jfif",
+      "/jiangning.jpg",
     cardImage:
-      "/jiangning-1.jfif",
+      "/jiangning-1.jpg",
     mapQuery: "388 Tianyuan East Road Yiwu Food City Jiangning Nanjing",
     staff: buildJiangningStaff(),
     menu: buildDefaultMenu(),
@@ -153,9 +153,9 @@ export const branches: Branch[] = [
       time: "5:00 PM – 10:00 PM",
     },
     heroImage:
-      "/pukou-1.jfif",
+      "/pukou-1.jpg",
     cardImage:
-      "/pukou.jfif",
+      "/pukou.jpg",
     mapQuery: "Zhushan Road Pukou Nanjing",
     staff: buildPukouStaff(),
     menu: buildDefaultMenu(),
