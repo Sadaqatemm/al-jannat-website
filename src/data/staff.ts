@@ -18,7 +18,7 @@ export function buildGulousStaff(): StaffMember[] {
         en: "Opened Gulou on day one and has run the front of house with warmth ever since.",
         zh: "鼓楼店创始人之一，自开业第一天便以热情管理前厅。",
       },
-      photo: "/gumanager.jfif",
+      photo: "/gumanager.jpg",
       isPlaceholder: true,
     },
     {
@@ -40,7 +40,7 @@ export function buildGulousStaff(): StaffMember[] {
         en: "Master of B.B.Q, transforming low-and-slow cooks into tender, smoky perfection.",
         zh: "熏烤大师，以慢火低热将食材化为鲜嫩多汁、烟熏风味绝佳的完美杰作。",
       },
-      photo: "/gu3.jfif",
+      photo: "/gu3.jpg",
       isPlaceholder: true,
     },
     {
@@ -51,7 +51,7 @@ export function buildGulousStaff(): StaffMember[] {
         en: "A noble artisan of the kitchen, bringing dedication and dignity to the comforting staple foods that sustain us.",
         zh: "德才兼备的厨房匠人，以尊严与专注烹饪滋养身心的日常主食。",
       },
-      photo: "/gu4.jfif",
+      photo: "/gu4.jpg",
       isPlaceholder: true,
     },
 
@@ -63,7 +63,7 @@ export function buildGulousStaff(): StaffMember[] {
         en: "The warm welcome you'll remember at the Gulou door — fluent in Mandarin, Urdu, Hindi and English.",
         zh: "鼓楼店最温暖的迎宾面孔，精通普通话、乌尔都语,印度语，英语。",
       },
-      photo: "/gu5.jfif",
+      photo: "/gu5.jpg",
       isPlaceholder: true,
     },
        {
@@ -74,7 +74,7 @@ export function buildGulousStaff(): StaffMember[] {
         en: "The warm heart of our team, serving comfort at his own gentle pace with an ever-present smile.",
         zh: "店里的温情核心，步调沉稳，始终带着治愈微笑。",
       },
-      photo: "/gu6.jfif",
+      photo: "/gu6.jpg",
       isPlaceholder: true,
     },
 
@@ -86,7 +86,7 @@ export function buildGulousStaff(): StaffMember[] {
         en: "Our focused tandoor champion, tirelessly fueling the clay oven with a sharp eye and endless dedication.",
         zh: "专注的烤炉（Tandoor）铁汉，用极尽的敬业坚守于滚烫火炉旁。",
       },
-      photo: "/gu7.jfif",
+      photo: "/gu7.jpg",
       isPlaceholder: true,
     },
        {
@@ -114,7 +114,7 @@ export function buildXianlinStaff(): StaffMember[] {
         en: "Our manager! who brightens every shift with genuine kindness and a warm welcome.",
         zh: "经理！始终用真诚的善意与温暖的问候照亮每一次相遇。",
       },
-      photo: "/ximanager.jfif",
+      photo: "/ximanager.jpg",
             isPlaceholder: true,
     },
     {
@@ -125,7 +125,7 @@ export function buildXianlinStaff(): StaffMember[] {
         en: "15+ years of experience in Kitchen. Trained in India,Middle east Suri brings bold Punjab flavours to the university crowd.",
         zh: "曾在印度受训，以浓郁的旁遮普风味征服大学城食客。",
       },
-      photo: "/xi2.jfif", 
+      photo: "/xi2.jpg", 
            isPlaceholder: true,
     },
         {
@@ -148,7 +148,7 @@ export function buildXianlinStaff(): StaffMember[] {
     //     en: "Masters the tandoor station and produces the crispest seekh kebabs on the menu.",
     //     zh: "土炉台掌控者，出品菜单上最酥脆的串烤羊肉。",
     //   },
-    //   photo: "/xi3.jfif",
+    //   photo: "/xi3.jpg",
     //         isPlaceholder: true,
     // },
     {
@@ -200,7 +200,7 @@ export function buildJiangningStaff(): StaffMember[] {
         en: "Runs our biggest dining room with military precision and a hospitality heart.",
         zh: "以精准的管理与热情的待客之道，统领我们规模最大的餐厅。",
       },
-      photo: "/jisanjay.jfif",
+      photo: "/jisanjay.jpg",
       isPlaceholder: true,
     },
     {
@@ -211,7 +211,7 @@ export function buildJiangningStaff(): StaffMember[] {
         en: "The high-energy engine of our floor, executing every task with tireless hustle.",
         zh: "大堂里的活力永动机，干劲十足地搞定每一项琐事。",
       },
-      photo: "/ji0.jfif",
+      photo: "/ji0.jpg",
       isPlaceholder: true,
     },
 
@@ -290,7 +290,7 @@ export function buildPukouStaff(): StaffMember[] {
         en: "Led the launch of our newest location and shaped its modern, river-view dining identity.",
         zh: "主导浦口新店开业，打造了面江而立的现代用餐风格。",
       },
-      photo: "/pumanager.jfif",
+      photo: "/pumanager.jpg",
       isPlaceholder: true,
     },{
       id: "pukou-head-chef",
@@ -311,7 +311,7 @@ export function buildPukouStaff(): StaffMember[] {
         en: "Our deep-thinking 2017 tandoor pioneer..",
         zh: "始于2017、饱含故事的烤炉鼻祖。",
       },
-      photo: "/pu6.jfif",
+      photo: "/pu6.jpg",
       isPlaceholder: true,
     },
     
@@ -323,7 +323,7 @@ export function buildPukouStaff(): StaffMember[] {
         en: "Charming runner delivering smiles and flavor.",
         zh: "用可爱微笑传递美味的传菜员。",
       },
-      photo: "/jayprakash.jfif",
+      photo: "/jayprakash.jpg",
       isPlaceholder: true,
     }, 
     {
@@ -334,7 +334,7 @@ export function buildPukouStaff(): StaffMember[] {
         en: "The master of rich, comforting spices.",
         zh: "浓郁香料与完美咖喱的主宰。",
       },
-      photo: "/pu3.jfif",
+      photo: "/pu3.jpg",
       isPlaceholder: true,
     },
     {
