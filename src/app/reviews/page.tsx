@@ -208,14 +208,13 @@ function DesktopReviewInner() {
             </Field>
 
             <div className="pt-1">
-              <Magnetic
-                as="button"
-                type="submit"
-                disabled={loading}
-                className="w-full bg-gold text-char py-4 text-[13px] tracking-[0.1em] font-bold uppercase text-center hover:bg-gold-bright transition-colors disabled:opacity-60"
-              >
-                {loading ? (zh ? "提交中…" : "Submitting…") : (zh ? "提交评价" : "Submit Review")}
-              </Magnetic>
+              <button
+              type="submit"
+              disabled={loading}
+              className="w-full bg-gold text-char py-4 text-[13px] tracking-[0.1em] font-bold uppercase text-center hover:bg-gold-bright transition-colors disabled:opacity-60"
+            >
+              {loading ? (zh ? "提交中…" : "Submitting…") : (zh ? "提交评价" : "Submit Review")}
+            </button>
             </div>
 
             <p className="text-[11px] text-ivory-dim opacity-60 text-center">
