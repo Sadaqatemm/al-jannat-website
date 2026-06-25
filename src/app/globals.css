@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --char: #0a0605;
+  --tandoor: #160d09;
+  --tandoor-2: #1f130b;
+  --gold: #c9a04a;
+  --gold-bright: #f0cd7e;
+  --gold-dim: #8a703a;
+  --brick: #9a3232;
+  --brick-bright: #c44848;
+  --emerald: #2d4a3e;
+  --emerald-bright: #4a7d68;
+  --ivory: #f5ead8;
+  --ivory-dim: #beac8e;
+  --line: rgba(201, 160, 74, 0.16);
+
+  --font-display: "Cormorant Garamond", "Noto Serif SC", serif;
+  --font-label: "Cinzel", "Inter", serif;
+  --font-body: "Inter", "Noto Sans SC", sans-serif;
+}
+
+@theme inline {
+  --color-char: var(--char);
+  --color-tandoor: var(--tandoor);
+  --color-tandoor-2: var(--tandoor-2);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-gold-dim: var(--gold-dim);
+  --color-brick: var(--brick);
+  --color-brick-bright: var(--brick-bright);
+  --color-emerald: var(--emerald);
+  --color-emerald-bright: var(--emerald-bright);
+  --color-ivory: var(--ivory);
+  --color-ivory-dim: var(--ivory-dim);
+  --color-line: var(--line);
+
+  --font-display: var(--font-display);
+  --font-label: var(--font-label);
+  --font-body: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--char);
+  color: var(--ivory);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[lang="zh-CN"] body {
+  font-family: "Noto Sans SC", "Inter", sans-serif;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--char);
+}
+
+/* ---- Locale-aware font swapping ---- */
+.font-display {
+  font-family: var(--font-display);
+}
+html[lang="zh-CN"] .font-display {
+  font-family: "Noto Serif SC", serif;
+}
+
+.font-label {
+  font-family: var(--font-label);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+/* ---- Texture / grain overlay ---- */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 300;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* ---- Shimmer text effect (hero emphasis word) ---- */
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+.text-shimmer {
+  background: linear-gradient(
+    120deg,
+    var(--gold) 0%,
+    var(--gold-bright) 50%,
+    var(--gold) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+/* ---- Floaty animation for badges ---- */
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+.animate-floaty {
+  animation: floaty 5s ease-in-out infinite;
+}
+
+/* ---- Scroll cue pulse ---- */
+@keyframes scrollPulse {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.animate-scroll-pulse {
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+/* ---- Custom cursor (desktop only) ---- */
+@media (hover: hover) and (pointer: fine) {
+  .cursor-target {
+    cursor: none;
+  }
+}
+
+.fine-pointer-only {
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .fine-pointer-only {
+    display: block;
+  }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Scrollbar styling ---- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--char);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-dim);
+  border-radius: 6px;
+}
+
+/* ---- Shared utility classes ---- */
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+  opacity: 0.82;
+  transition: opacity 0.25s;
+}
+.nav-link:hover {
+  opacity: 1;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  background: rgba(245, 234, 216, 0.04);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 12px 14px;
+  color: var(--ivory);
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.25s;
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+@keyframes modalIn {
+  from {
+    transform: translateY(20px) scale(0.97);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.animate-modal-in {
+  animation: modalIn 0.35s cubic-bezier(0.2, 0.9, 0.25, 1);
+}
+
