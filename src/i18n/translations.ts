@@ -116,12 +116,19 @@ export const translations = {
       time: "Time",
       confirmReservation: "Confirm Reservation",
       reservationToast: "Reservation received — we will call to confirm",
+<<<<<<< HEAD
       wechatTitle: "Chat on WeChat",
       wechatSub: "Choose a branch to open WeChat.",
       wechatNote: "*Tap a branch to open WeChat chat",
       reviewTitle: "Leave Us a Review",
       reviewSub: "Your feedback means a lot — choose a branch.",
       reviewNote: "Reviews on Dianping and Meituan help us grow. Thank you!",
+=======
+      whatsappTitle: "Order via WhatsApp",
+      whatsappSub: "Choose a branch to start chatting.",
+      whatsappNote:
+        "*shared number — replace with each branch's real WhatsApp line if available",
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
       menuTitle: "View a Menu",
       menuSub: "Each branch has its own à la carte menu.",
       galleryTitle: "View a Gallery",
@@ -247,12 +254,18 @@ export const translations = {
       time: "时间",
       confirmReservation: "确认预订",
       reservationToast: "预订请求已收到 — 我们将致电确认",
+<<<<<<< HEAD
       wechatTitle: "微信联系我们",
       wechatSub: "选择分店，打开微信聊天。",
       wechatNote: "*点击分店即可打开微信",
       reviewTitle: "为我们留下评价",
       reviewSub: "您的反馈对我们非常重要——请选择分店。",
       reviewNote: "在大众点评和美团的评价帮助我们成长，感谢您！",
+=======
+      whatsappTitle: "WhatsApp 订餐",
+      whatsappSub: "选择一家分店开始聊天。",
+      whatsappNote: "*共用号码 — 如有各分店专属 WhatsApp，请替换为对应号码",
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
       menuTitle: "查看菜单",
       menuSub: "每家分店均有独立的单点菜单。",
       galleryTitle: "查看相册",

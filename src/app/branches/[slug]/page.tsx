@@ -8,7 +8,10 @@ import BranchMenu from "@/components/sections/branch/BranchMenu";
 import BranchGallery from "@/components/sections/branch/BranchGallery";
 import BranchInfoMap from "@/components/sections/branch/BranchInfoMap";
 import SpiceDivider from "@/components/ui/SpiceDivider";
+<<<<<<< HEAD
 import BranchReviews from "@/components/sections/branch/BranchReviews";
+=======
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
 
 export function generateStaticParams() {
   return getAllBranchSlugs().map((slug) => ({ slug }));
@@ -47,7 +50,10 @@ export default async function BranchPage({
       <BranchGallery branch={branch} />
       <SpiceDivider />
       <BranchInfoMap branch={branch} />
+<<<<<<< HEAD
       <BranchReviews slug={branch.slug} />
+=======
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
     </>
   );
 }

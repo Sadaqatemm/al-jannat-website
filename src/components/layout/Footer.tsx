@@ -17,7 +17,11 @@ export default function Footer() {
               <Image src="/images/logo.png" alt="Al Jannat logo" width={64} height={64} className="w-[108%] h-[108%] object-cover" />
             </span>
             <span>
+<<<<<<< HEAD
               AL JANNAT<sup className="text-[10px] text-gold align-super">®</sup>
+=======
+              AL JANNAT
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
               <small className="block font-sans text-[9px] tracking-[0.2em] text-ivory-dim font-normal uppercase mt-0.5 normal-case">
                 Indian Restaurants
               </small>

@@ -6,12 +6,16 @@ import {
   buildJiangningStaff,
   buildPukouStaff,
 } from "./staff";
+<<<<<<< HEAD
 import {
   buildGulousGallery,
   buildXianlinGallery,
   buildJiangningGallery,
   buildPukouGallery,
 } from "./gallery";
+=======
+import { buildDefaultGallery } from "./gallery";
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
 
 // ============================================================================
 // BRANCH DATA
@@ -46,11 +50,19 @@ export const branches: Branch[] = [
       zh: "南京市鼓楼区云南北路28号15号楼107室",
     },
     phone: "+86 25 5223 5776",
+<<<<<<< HEAD
     wechat: "aljannat_nanjing",
     dianpingRating: 4.7,
     openingHours: "10:00 AM – 10:00 PM",
     buffet: {
       days: { en: "Friday and Saturday", zh: "周五和周六" },
+=======
+    whatsapp: "+862552235776",
+    dianpingRating: 4.7,
+    openingHours: "10:00 AM – 10:00 PM",
+    buffet: {
+      days: { en: "Friday – Saturday", zh: "周五至周六" },
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
       time: "5:00 PM – 10:00 PM",
     },
     heroImage:
@@ -58,10 +70,16 @@ export const branches: Branch[] = [
     cardImage:
       "/gulou.jpg",
     mapQuery: "28 North Yunnan Street Gulou Nanjing",
+<<<<<<< HEAD
     coordinates: { lat: 31.89959001, lng: 118.78588350 },
     staff: buildGulousStaff(),
     menu: buildDefaultMenu(),
     gallery: buildGulousGallery(),
+=======
+    staff: buildGulousStaff(),
+    menu: buildDefaultMenu(),
+    gallery: buildDefaultGallery(0),
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
   },
   {
     slug: "xianlin",
@@ -81,12 +99,21 @@ export const branches: Branch[] = [
     },
     addressIsPlaceholder: true,
     phone: "+86 25 5223 5776",
+<<<<<<< HEAD
     wechat: "aljannat_nanjing",
     dianpingRating: 4.7,
     ratingIsPlaceholder: true,
     openingHours: "10:00 AM – 10:00 PM",
     buffet: {
       days: { en: "Friday and Saturday", zh: "周五和周六" },
+=======
+    whatsapp: "+862552235776",
+    dianpingRating: 4.6,
+    ratingIsPlaceholder: true,
+    openingHours: "10:00 AM – 10:00 PM",
+    buffet: {
+      days: { en: "Friday – Saturday", zh: "周五至周六" },
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
       time: "5:00 PM – 10:00 PM",
     },
     heroImage:
@@ -94,10 +121,16 @@ export const branches: Branch[] = [
     cardImage:
       "/xianlin-11.jpg",
     mapQuery: "Xianlin University District Qixia Nanjing",
+<<<<<<< HEAD
     coordinates: { lat: 31.92421378, lng: 118.91563738 },
     staff: buildXianlinStaff(),
     menu: buildDefaultMenu(),
     gallery: buildXianlinGallery(),
+=======
+    staff: buildXianlinStaff(),
+    menu: buildDefaultMenu(),
+    gallery: buildDefaultGallery(2),
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
   },
   {
     slug: "jiangning",
@@ -116,12 +149,21 @@ export const branches: Branch[] = [
       zh: "南京市江宁区天元东路388号义乌美食城3楼",
     },
     phone: "+86 25 5223 5776",
+<<<<<<< HEAD
     wechat: "aljannat_nanjing",
     dianpingRating: 4.7,
     ratingIsPlaceholder: true,
     openingHours: "10:00 AM – 10:00 PM",
     buffet: {
       days: { en: "Friday, Saturday and Sunday", zh: "周五，周六和周日" },
+=======
+    whatsapp: "+862552235776",
+    dianpingRating: 4.6,
+    ratingIsPlaceholder: true,
+    openingHours: "10:00 AM – 10:00 PM",
+    buffet: {
+      days: { en: "Friday – Sunday", zh: "周五至周日" },
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
       time: "5:00 PM – 10:00 PM",
     },
     heroImage:
@@ -129,10 +171,16 @@ export const branches: Branch[] = [
     cardImage:
       "/jiangning-1.jpg",
     mapQuery: "388 Tianyuan East Road Yiwu Food City Jiangning Nanjing",
+<<<<<<< HEAD
     coordinates: { lat: 31.77127743, lng: 118.88643660 },
     staff: buildJiangningStaff(),
     menu: buildDefaultMenu(),
     gallery: buildJiangningGallery(),
+=======
+    staff: buildJiangningStaff(),
+    menu: buildDefaultMenu(),
+    gallery: buildDefaultGallery(4),
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
   },
   {
     slug: "pukou",
@@ -152,12 +200,20 @@ export const branches: Branch[] = [
     },
     addressIsPlaceholder: true,
     phone: "+86 25 5223 5776",
+<<<<<<< HEAD
     wechat: "aljannat_nanjing",
+=======
+    whatsapp: "+862552235776",
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
     dianpingRating: 4.5,
     ratingIsPlaceholder: true,
     openingHours: "10:00 AM – 10:00 PM",
     buffet: {
+<<<<<<< HEAD
       days: { en: "Friday and Saturday", zh: "周五和周六" },
+=======
+      days: { en: "Friday – Saturday", zh: "周五至周六" },
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
       time: "5:00 PM – 10:00 PM",
     },
     heroImage:
@@ -165,10 +221,16 @@ export const branches: Branch[] = [
     cardImage:
       "/pukou.jpg",
     mapQuery: "Zhushan Road Pukou Nanjing",
+<<<<<<< HEAD
     coordinates: { lat: 31.89759116, lng: 118.64737964 },
     staff: buildPukouStaff(),
     menu: buildDefaultMenu(),
     gallery: buildPukouGallery(),
+=======
+    staff: buildPukouStaff(),
+    menu: buildDefaultMenu(),
+    gallery: buildDefaultGallery(6),
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
   },
 ];
 

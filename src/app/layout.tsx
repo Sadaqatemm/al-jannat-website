@@ -9,8 +9,12 @@ import FloatingActions from "@/components/layout/FloatingActions";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
 import CustomCursor from "@/components/ui/CustomCursor";
 import ReserveModal from "@/components/ui/ReserveModal";
+<<<<<<< HEAD
 import WeChatModal from "@/components/ui/WeChatModal";
 import ReviewModal from "@/components/ui/ReviewModal";
+=======
+import WhatsAppModal from "@/components/ui/WhatsAppModal";
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
 
 export const metadata: Metadata = {
   title: "Al Jannat Restaurants — Authentic Indian, Pakistani & Afghan Dining in Nanjing",
@@ -46,8 +50,12 @@ export default function RootLayout({
               <FloatingActions />
               <MobileBottomNav />
               <ReserveModal />
+<<<<<<< HEAD
               <WeChatModal />
               <ReviewModal />
+=======
+              <WhatsAppModal />
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
             </ToastProvider>
           </ModalProvider>
         </LanguageProvider>

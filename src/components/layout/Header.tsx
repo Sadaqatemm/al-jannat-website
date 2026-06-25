@@ -13,7 +13,10 @@ export default function Header() {
   const { openModal } = useModal();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+<<<<<<< HEAD
   const [reviewOpen, setReviewOpen] = useState(false);
+=======
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
 
   useEffect(() => {
     function onScroll() {
@@ -27,6 +30,7 @@ export default function Header() {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
   }, [mobileOpen]);
 
+<<<<<<< HEAD
   // Close review dropdown when clicking outside
   useEffect(() => {
     if (!reviewOpen) return;
@@ -42,6 +46,8 @@ export default function Header() {
     { slug: "pukou",    en: "Pukou",     zh: "浦口" },
   ];
 
+=======
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
   return (
     <>
       <header
@@ -51,7 +57,10 @@ export default function Header() {
             : "bg-gradient-to-b from-[rgba(10,6,5,0.9)] to-transparent py-5"
         }`}
       >
+<<<<<<< HEAD
         {/* Logo with ® */}
+=======
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
         <Link href="/" className="flex items-center gap-3 font-label text-[18px] font-semibold tracking-wide">
           <span className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-ivory border border-gold shadow-[0_0_0_3px_rgba(201,160,74,0.12)] flex items-center justify-center">
             <Image
@@ -63,18 +72,32 @@ export default function Header() {
             />
           </span>
           <span>
+<<<<<<< HEAD
             AL JANNAT<sup className="text-[10px] text-gold align-super">®</sup>
+=======
+            AL JANNAT
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
             <small className="block font-sans text-[9px] tracking-[0.2em] text-ivory-dim font-normal uppercase mt-0.5 normal-case">
               {locale === "zh" ? "印度餐厅" : "Indian Restaurants"}
             </small>
           </span>
         </Link>
 
+<<<<<<< HEAD
         {/* Desktop nav */}
         <nav className="hidden lg:flex gap-9 text-[13px] tracking-wide items-center">
           <Link href="/#branches" className="nav-link">
             {t.nav.branches}
           </Link>
+=======
+        <nav className="hidden lg:flex gap-9 text-[13px] tracking-wide">
+          <Link href="/#branches" className="nav-link">
+            {t.nav.branches}
+          </Link>
+          <Link href="/#dishes" className="nav-link">
+            {t.nav.dishes}
+          </Link>
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
           <Link href="/menu" className="nav-link">
             {t.nav.menu}
           </Link>
@@ -84,6 +107,7 @@ export default function Header() {
           <Link href="/reservations" className="nav-link">
             {t.nav.reservations}
           </Link>
+<<<<<<< HEAD
 
           {/* Review dropdown */}
           <div className="relative">
@@ -121,6 +145,8 @@ export default function Header() {
               </div>
             )}
           </div>
+=======
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
         </nav>
 
         <div className="flex items-center gap-4">
@@ -137,9 +163,23 @@ export default function Header() {
             aria-label="Menu"
             className="lg:hidden flex flex-col gap-1.5 w-6 z-101 relative"
           >
+<<<<<<< HEAD
             <span className={`h-px bg-ivory w-full transition-all ${mobileOpen ? "translate-y-[6px] rotate-45" : ""}`} />
             <span className={`h-px bg-ivory w-full transition-all ${mobileOpen ? "opacity-0" : ""}`} />
             <span className={`h-px bg-ivory w-full transition-all ${mobileOpen ? "-translate-y-[6px] -rotate-45" : ""}`} />
+=======
+            <span
+              className={`h-px bg-ivory w-full transition-all ${
+                mobileOpen ? "translate-y-[6px] rotate-45" : ""
+              }`}
+            />
+            <span className={`h-px bg-ivory w-full transition-all ${mobileOpen ? "opacity-0" : ""}`} />
+            <span
+              className={`h-px bg-ivory w-full transition-all ${
+                mobileOpen ? "-translate-y-[6px] -rotate-45" : ""
+              }`}
+            />
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
           </button>
         </div>
       </header>
@@ -153,6 +193,12 @@ export default function Header() {
         <Link href="/#branches" onClick={() => setMobileOpen(false)} className="font-display text-3xl">
           {t.nav.branches}
         </Link>
+<<<<<<< HEAD
+=======
+        <Link href="/#dishes" onClick={() => setMobileOpen(false)} className="font-display text-3xl">
+          {t.nav.dishes}
+        </Link>
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
         <Link href="/menu" onClick={() => setMobileOpen(false)} className="font-display text-3xl">
           {t.nav.menu}
         </Link>
@@ -162,6 +208,7 @@ export default function Header() {
         <Link href="/reservations" onClick={() => setMobileOpen(false)} className="font-display text-3xl">
           {t.nav.reservations}
         </Link>
+<<<<<<< HEAD
         {/* Mobile Review section — direct links to Dianping & Meituan */}
         <div className="flex flex-col items-center gap-3">
           <p className="font-display text-3xl text-gold-bright">
@@ -200,6 +247,8 @@ export default function Header() {
             ))}
           </div>
         </div>
+=======
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
         <a href="tel:+862552235776" className="font-display text-3xl text-gold-bright">
           {t.nav.callUs}
         </a>

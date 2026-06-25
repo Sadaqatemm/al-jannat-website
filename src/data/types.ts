@@ -11,7 +11,11 @@ export interface LocalizedText {
 
 export type SpiceLevel = 0 | 1 | 2 | 3; // 0 = none, 1-3 = chili icons
 
+<<<<<<< HEAD
 export type MenuCategory = "appetizer" | "soup" | "salad" | "tandoori" | "vegetarian" | "chicken" | "lamb" | "seafood" | "naan" | "rice" | "indo-chinese" | "desserts-drinks" | "set-menu";
+=======
+export type MenuCategory = "starters" | "mains" | "desserts" | "drinks";
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
 
 export interface MenuItem {
   id: string;
@@ -57,7 +61,11 @@ export interface Branch {
   /** True if the exact address could not be verified and needs confirmation */
   addressIsPlaceholder?: boolean;
   phone: string;
+<<<<<<< HEAD
   wechat: string;
+=======
+  whatsapp: string;
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
   /** Aggregated public rating (e.g. Dianping). Verify before launch if isPlaceholder. */
   dianpingRating: number;
   ratingIsPlaceholder?: boolean;
@@ -71,6 +79,7 @@ export interface Branch {
   menu: MenuItem[];
   gallery: GalleryImage[];
 }
+<<<<<<< HEAD
 
 export interface Review {
   id: string;
@@ -80,3 +89,5 @@ export interface Review {
   text: string;
   timestamp: string;
 }
+=======
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e

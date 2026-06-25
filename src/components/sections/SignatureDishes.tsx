@@ -39,7 +39,18 @@ export default function SignatureDishes() {
                 </div>
                 <div className="font-display text-[25px] font-semibold mb-2">{pick(dish.name)}</div>
                 <p className="text-[13px] text-ivory-dim leading-relaxed mb-4">{pick(dish.description)}</p>
+<<<<<<< HEAD
 
+=======
+                <div className="font-label text-gold-bright text-sm tracking-wide">
+                  ¥{dish.price}
+                  {dish.isPlaceholder && (
+                    <span className="text-[9.5px] text-ivory-dim opacity-55 ml-1.5">
+                      {t.dishes.placeholder}
+                    </span>
+                  )}
+                </div>
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
               </div>
             </Reveal>
           ))}

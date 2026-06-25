@@ -18,7 +18,11 @@ export default function BranchQuickbar({ branch }: { branch: Branch }) {
           {pick(branch.buffet.days)}, {branch.buffet.time}
         </strong>
       </QbItem>
+<<<<<<< HEAD
       <QbItem label={t.branchPage.orderNow} onClick={() => openModal("wechat")} clickable>
+=======
+      <QbItem label={t.branchPage.orderNow} onClick={() => openModal("whatsapp")} clickable>
+>>>>>>> c90f6974ea263d903fd93f7e5d93c92800961a6e
         <strong className="font-display text-lg">{branch.phone}</strong>
       </QbItem>
       <QbItem label={t.branchPage.dianpingRating}>
